@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function Profile() {
@@ -13,31 +11,17 @@ function Profile() {
 }
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Profile />
+      <h1>Katherine Johnson</h1>
+      <p>Creola Katherine Johnson (née Coleman; August 26, 1918 – February 24, 2020) 
+        was an American human computer whose calculations of orbital mechanics as a NASA employee
+         were critical to the success of the first and subsequent U.S. crewed spaceflights.
+         During her 33-year career at NASA and its predecessor, the National Advisory Committee for Aeronautics, 
+         she earned a reputation for mastering complex manual calculations and helped pioneer the use of computers to 
+         perform tasks previously requiring humans. The space agency noted her "historical role as one of the first African-American women to work as a NASA scientist".</p>
+    </div>
   )
 }
 
